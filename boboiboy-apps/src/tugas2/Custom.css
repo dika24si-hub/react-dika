@@ -1,0 +1,114 @@
+/* Tambahkan di bawah kode CSS yang sudah ada */
+
+.biodata-card {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #6c757d;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.label {
+  font-weight: bold;
+  width: 120px;
+  color: #495057;
+}
+
+.value {
+  color: #212529;
+}
+
+.education {
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.education h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.education p {
+  margin: 5px 0;
+  color: #495057;
+}
+
+.year {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skills h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge {
+  background: #e9ecef;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #495057;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin: 8px 0;
+  color: #495057;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+  font-size: 12px;
+  color: #adb5bd;
+}

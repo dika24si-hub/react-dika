@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Online Course",
+    "category": "Education",
+    "price": 150000,
+    "rating": 4.5,
+    "image": "https://picsum.photos/400/300?random=1",
+    "provider": {"company": "EduTech", "location": "Jakarta"},
+    "contact": {"email": "edu@mail.com", "phone": "0811"},
+    "features": {"level": "Beginner", "certificate": true}
+  },
+  {
+    "id": 2,
+    "name": "Cloud Storage",
+    "category": "Technology",
+    "price": 50000,
+    "rating": 4.7,
+    "image": "https://picsum.photos/400/300?random=2",
+    "provider": {"company": "CloudX", "location": "Singapore"},
+    "contact": {"email": "cloud@mail.com", "phone": "0822"},
+    "features": {"storage": "1TB"}
+  },
+  {
+    "id": 3,
+    "name": "Food Delivery",
+    "category": "Lifestyle",
+    "price": 20000,
+    "rating": 4.3,
+    "image": "https://picsum.photos/400/300?random=3",
+    "provider": {"company": "FoodGo", "location": "Bandung"},
+    "contact": {"email": "food@mail.com", "phone": "0833"},
+    "features": {"delivery": "30 min"}
+  },
+  {
+    "id": 4,
+    "name": "Music Streaming",
+    "category": "Entertainment",
+    "price": 60000,
+    "rating": 4.6,
+    "image": "https://picsum.photos/400/300?random=4",
+    "provider": {"company": "TuneIn", "location": "Jakarta"},
+    "contact": {"email": "music@mail.com", "phone": "0844"},
+    "features": {"offline": true}
+  },
+  {
+    "id": 5,
+    "name": "Video Streaming",
+    "category": "Entertainment",
+    "price": 80000,
+    "rating": 4.8,
+    "image": "https://picsum.photos/400/300?random=5",
+    "provider": {"company": "StreamX", "location": "Singapore"},
+    "contact": {"email": "video@mail.com", "phone": "0855"},
+    "features": {"hd": true}
+  },
+  {
+    "id": 6,
+    "name": "Fitness App",
+    "category": "Health",
+    "price": 40000,
+    "rating": 4.2,
+    "image": "https://picsum.photos/400/300?random=6",
+    "provider": {"company": "FitLife", "location": "Jakarta"},
+    "contact": {"email": "fit@mail.com", "phone": "0866"},
+    "features": {"coach": true}
+  },
+  {
+    "id": 7,
+    "name": "E-book Service",
+    "category": "Education",
+    "price": 30000,
+    "rating": 4.4,
+    "image": "https://picsum.photos/400/300?random=7",
+    "provider": {"company": "Readly", "location": "Bandung"},
+    "contact": {"email": "book@mail.com", "phone": "0877"},
+    "features": {"download": true}
+  },
+  {
+    "id": 8,
+    "name": "Online Consultation",
+    "category": "Health",
+    "price": 100000,
+    "rating": 4.6,
+    "image": "https://picsum.photos/400/300?random=8",
+    "provider": {"company": "MediCare", "location": "Jakarta"},
+    "contact": {"email": "doctor@mail.com", "phone": "0888"},
+    "features": {"24h": true}
+  },
+  {
+    "id": 9,
+    "name": "Travel Booking",
+    "category": "Lifestyle",
+    "price": 50000,
+    "rating": 4.5,
+    "image": "https://picsum.photos/400/300?random=9",
+    "provider": {"company": "TripGo", "location": "Bali"},
+    "contact": {"email": "travel@mail.com", "phone": "0899"},
+    "features": {"discount": true}
+  },
+  {
+    "id": 10,
+    "name": "Language Learning",
+    "category": "Education",
+    "price": 120000,
+    "rating": 4.7,
+    "image": "https://picsum.photos/400/300?random=10",
+    "provider": {"company": "Lingua", "location": "Jakarta"},
+    "contact": {"email": "lang@mail.com", "phone": "0800"},
+    "features": {"interactive": true}
+  },
+  {
+    "id": 11,
+    "name": "VPN Service",
+    "category": "Technology",
+    "price": 70000,
+    "rating": 4.3,
+    "image": "https://picsum.photos/400/300?random=11",
+    "provider": {"company": "SecureNet", "location": "Singapore"},
+    "contact": {"email": "vpn@mail.com", "phone": "0812"},
+    "features": {"security": "high"}
+  },
+  {
+    "id": 12,
+    "name": "Website Builder",
+    "category": "Technology",
+    "price": 90000,
+    "rating": 4.4,
+    "image": "https://picsum.photos/400/300?random=12",
+    "provider": {"company": "WebPro", "location": "Jakarta"},
+    "contact": {"email": "web@mail.com", "phone": "0813"},
+    "features": {"drag_drop": true}
+  },
+  {
+    "id": 13,
+    "name": "Online Gaming",
+    "category": "Entertainment",
+    "price": 60000,
+    "rating": 4.6,
+    "image": "https://picsum.photos/400/300?random=13",
+    "provider": {"company": "GameHub", "location": "Bandung"},
+    "contact": {"email": "game@mail.com", "phone": "0814"},
+    "features": {"multiplayer": true}
+  },
+  {
+    "id": 14,
+    "name": "Digital Marketing",
+    "category": "Business",
+    "price": 200000,
+    "rating": 4.7,
+    "image": "https://picsum.photos/400/300?random=14",
+    "provider": {"company": "MarketPro", "location": "Jakarta"},
+    "contact": {"email": "market@mail.com", "phone": "0815"},
+    "features": {"seo": true}
+  },
+  {
+    "id": 15,
+    "name": "Graphic Design",
+    "category": "Business",
+    "price": 180000,
+    "rating": 4.5,
+    "image": "https://picsum.photos/400/300?random=15",
+    "provider": {"company": "DesignX", "location": "Bandung"},
+    "contact": {"email": "design@mail.com", "phone": "0816"},
+    "features": {"custom": true}
+  },
+  {
+    "id": 16,
+    "name": "Online Meeting",
+    "category": "Technology",
+    "price": 40000,
+    "rating": 4.4,
+    "image": "https://picsum.photos/400/300?random=16",
+    "provider": {"company": "MeetPro", "location": "Singapore"},
+    "contact": {"email": "meet@mail.com", "phone": "0817"},
+    "features": {"record": true}
+  },
+  {
+    "id": 17,
+    "name": "Cloud Hosting",
+    "category": "Technology",
+    "price": 110000,
+    "rating": 4.6,
+    "image": "https://picsum.photos/400/300?random=17",
+    "provider": {"company": "HostX", "location": "Jakarta"},
+    "contact": {"email": "host@mail.com", "phone": "0818"},
+    "features": {"uptime": "99.9%"}
+  },
+  {
+    "id": 18,
+    "name": "Online Shop",
+    "category": "Business",
+    "price": 130000,
+    "rating": 4.3,
+    "image": "https://picsum.photos/400/300?random=18",
+    "provider": {"company": "ShopEase", "location": "Bali"},
+    "contact": {"email": "shop@mail.com", "phone": "0819"},
+    "features": {"payment": "secure"}
+  },
+  {
+    "id": 19,
+    "name": "Delivery Service",
+    "category": "Lifestyle",
+    "price": 25000,
+    "rating": 4.2,
+    "image": "https://picsum.photos/400/300?random=19",
+    "provider": {"company": "QuickSend", "location": "Jakarta"},
+    "contact": {"email": "send@mail.com", "phone": "0820"},
+    "features": {"fast": true}
+  },
+  {
+    "id": 20,
+    "name": "Photo Editing",
+    "category": "Technology",
+    "price": 75000,
+    "rating": 4.5,
+    "image": "https://picsum.photos/400/300?random=20",
+    "provider": {"company": "PhotoPro", "location": "Bandung"},
+    "contact": {"email": "photo@mail.com", "phone": "0821"},
+    "features": {"ai": true}
+  }
+]

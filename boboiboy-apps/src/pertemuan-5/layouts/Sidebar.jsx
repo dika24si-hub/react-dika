@@ -8,13 +8,13 @@ export default function Sidebar() {
     return (
         <div
             id="sidebar"
-            className="flex min-h-screen w-[360px] flex-col bg-white p-10 shadow-lg"
+            className="flex min-h-screen w-[360px] flex-col bg-white dark:bg-gray-800 p-10 shadow-lg text-black dark:text-white"
         >
             {/* Logo */}
             <div id="sidebar-logo" className="flex flex-col">
                 <span
                     id="logo-title"
-                    className="font-poppins text-[48px] text-gray-900"
+                    className="font-poppins text-[48px] text-gray-900 dark:text-white"
                 >
                     Sedap <b id="logo-dot" className="text-hijau">.</b>
                 </span>
@@ -34,12 +34,11 @@ export default function Sidebar() {
                     {/* Dashboard */}
                     <li>
                         <div
-                            id="menu-1"
                             onClick={() => setActiveMenu("Dashboard")}
                             className={`flex items-center cursor-pointer rounded-xl p-4 font-medium transition
                             ${activeMenu === "Dashboard"
-                                ? "bg-green-200 text-hijau font-extrabold"
-                                : "text-gray-600 hover:bg-green-200 hover:text-hijau"}
+                                ? "bg-green-200 dark:bg-green-700 text-hijau font-extrabold"
+                                : "text-gray-600 dark:text-gray-300 hover:bg-green-200 dark:hover:bg-green-700 hover:text-hijau"}
                             `}
                         >
                             <MdDashboard className="mr-4 text-xl" />
@@ -50,12 +49,11 @@ export default function Sidebar() {
                     {/* Orders */}
                     <li>
                         <div
-                            id="menu-2"
                             onClick={() => setActiveMenu("Orders")}
                             className={`flex items-center cursor-pointer rounded-xl p-4 font-medium transition
                             ${activeMenu === "Orders"
-                                ? "bg-green-200 text-hijau font-extrabold"
-                                : "text-gray-600 hover:bg-green-200 hover:text-hijau"}
+                                ? "bg-green-200 dark:bg-green-700 text-hijau font-extrabold"
+                                : "text-gray-600 dark:text-gray-300 hover:bg-green-200 dark:hover:bg-green-700 hover:text-hijau"}
                             `}
                         >
                             <FaClipboardList className="mr-4 text-xl" />
@@ -66,12 +64,11 @@ export default function Sidebar() {
                     {/* Customers */}
                     <li>
                         <div
-                            id="menu-3"
                             onClick={() => setActiveMenu("Customers")}
                             className={`flex items-center cursor-pointer rounded-xl p-4 font-medium transition
                             ${activeMenu === "Customers"
-                                ? "bg-green-200 text-hijau font-extrabold"
-                                : "text-gray-600 hover:bg-green-200 hover:text-hijau"}
+                                ? "bg-green-200 dark:bg-green-700 text-hijau font-extrabold"
+                                : "text-gray-600 dark:text-gray-300 hover:bg-green-200 dark:hover:bg-green-700 hover:text-hijau"}
                             `}
                         >
                             <FaUsers className="mr-4 text-xl" />
@@ -95,7 +92,6 @@ export default function Sidebar() {
                         </span>
 
                         <div
-                            id="add-menu-button"
                             className="flex justify-center items-center gap-2 p-2 mt-3 bg-white rounded-md"
                         >
                             <FaPlus className="text-gray-600 text-sm" />
@@ -106,7 +102,6 @@ export default function Sidebar() {
                     </div>
 
                     <img
-                        id="footer-avatar"
                         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
                         className="w-20 h-20 rounded-full object-cover ml-3"
                     />

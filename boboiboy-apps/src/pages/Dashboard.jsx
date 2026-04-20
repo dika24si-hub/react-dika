@@ -4,8 +4,16 @@ import { FaShoppingCart, FaTruck, FaBan, FaDollarSign, FaUsers } from "react-ico
 export default function Dashboard() {
     return (
         <div id="dashboard-container" className="text-black dark:text-white">
+
             {/* Page Header */}
-            <PageHeader />
+            <PageHeader 
+                title="Dashboard"
+                breadcrumb={["Home", "Home Detail", "Home Very Detail"]}
+            >
+                <button className="bg-hijau text-white px-5 py-2 rounded-lg shadow-md hover:opacity-90 transition">
+                    Add Button
+                </button>
+            </PageHeader>
 
             {/* GRID */}
             <div

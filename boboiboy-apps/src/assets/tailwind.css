@@ -7,11 +7,27 @@
 @font-face {
   font-family: 'Barlow';
   src: url('/fonts/Barlow-Regular.ttf');
+  font-weight: 400;
+}
+
+/* Poppins Regular */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+
+/* 🔥 TAMBAHKAN INI (WAJIB BIAR TEBAL) */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf');
+  src: url('/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
 }
 
 /* THEME */

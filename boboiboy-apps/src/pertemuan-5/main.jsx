@@ -9,7 +9,7 @@ import "./assets/tailwind.css";
 createRoot(document.getElementById("root")).render(
   <div
     id="app-container"
-    className="bg-gray-100 min-h-screen flex"
+    className="bg-gray-100 dark:bg-gray-900 min-h-screen flex text-black dark:text-white"
   >
     {/* WRAPPER */}
     <div

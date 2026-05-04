@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
-import { FaClipboardList, FaUsers, FaPlus, FaExclamationTriangle } from "react-icons/fa";
+import { FaClipboardList, FaUsers, FaBoxOpen, FaPlus, FaExclamationTriangle } from "react-icons/fa";
 
 export default function Sidebar() {
 
@@ -14,7 +14,7 @@ export default function Sidebar() {
   return (
     <div className="flex min-h-screen w-[360px] flex-col bg-white dark:bg-gray-800 p-10 shadow-lg text-black dark:text-white">
 
-      {/* Logo */}
+      {/* LOGO */}
       <div className="flex flex-col">
         <span className="font-poppins text-[48px] font-extrabold text-gray-900 dark:text-white">
           Sedap <b className="text-hijau">.</b>
@@ -25,7 +25,7 @@ export default function Sidebar() {
         </span>
       </div>
 
-      {/* Menu */}
+      {/* MENU */}
       <div className="mt-10">
         <ul className="space-y-3">
 
@@ -51,7 +51,15 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
-          {/* 🔥 GARIS PEMISAH */}
+          {/* 🔥 TAMBAHAN WAJIB (MODUL PRODUCT) */}
+          <li>
+            <NavLink to="/products" className={menuClass}>
+              <FaBoxOpen className="text-xl" />
+              <span>Products</span>
+            </NavLink>
+          </li>
+
+          {/* PEMISAH */}
           <hr className="my-3 border-gray-200 dark:border-gray-700" />
 
           {/* ERROR MENU */}
@@ -83,7 +91,7 @@ export default function Sidebar() {
         </ul>
       </div>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <div className="mt-auto">
 
         <div className="bg-hijau px-4 py-3 rounded-md shadow-lg mb-10 flex items-center justify-between">

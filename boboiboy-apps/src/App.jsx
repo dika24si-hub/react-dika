@@ -1,12 +1,17 @@
 import { Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react"; // ✅ WAJIB
 
 import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
 
-import Dashboard from "./pages/Dashboard";
-import Orders from "./pages/Orders";
-import Customers from "./pages/Customers";
-import ErrorPage from "./pages/ErrorPage";
+// 🔥 LAZY LOAD (sesuai modul)
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Orders = lazy(() => import("./pages/Orders"));
+const Customers = lazy(() => import("./pages/Customers"));
+const CustomerDetail = lazy(() => import("./pages/CustomerDetail"));
+const Products = lazy(() => import("./pages/Products")); // ✅ TAMBAH
+const ProductDetail = lazy(() => import("./pages/ProductDetail")); // ✅ TAMBAH
+const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 
 function App() {
   return (
@@ -14,7 +19,6 @@ function App() {
       id="app-container"
       className="bg-gray-100 dark:bg-gray-900 min-h-screen flex text-black dark:text-white"
     >
-      {/* WRAPPER */}
       <div id="layout-wrapper" className="flex flex-row flex-1">
 
         {/* SIDEBAR */}
@@ -25,59 +29,50 @@ function App() {
 
           <Header />
 
-          {/* ROUTES */}
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/customers" element={<Customers />} />
+          {/* 🔥 SUSPENSE (WAJIB DI MODUL) */}
+          <Suspense fallback={<div>Loading...</div>}>
 
-            {/* 🔥 ERROR ROUTES */}
-            <Route 
-              path="/error-400" 
-              element={
-                <ErrorPage 
-                  code="400"
-                  description="Bad Request"
-                  image="https://cdn-icons-png.flaticon.com/512/564/564619.png"
-                />
-              } 
-            />
+            <Routes>
 
-            <Route 
-              path="/error-401" 
-              element={
-                <ErrorPage 
-                  code="401"
-                  description="Unauthorized"
-                  image="https://cdn-icons-png.flaticon.com/512/564/564619.png"
-                />
-              } 
-            />
+              {/* DASHBOARD */}
+              <Route path="/" element={<Dashboard />} />
 
-            <Route 
-              path="/error-403" 
-              element={
-                <ErrorPage 
-                  code="403"
-                  description="Forbidden"
-                  image="https://cdn-icons-png.flaticon.com/512/564/564619.png"
-                />
-              } 
-            />
+              {/* ORDERS */}
+              <Route path="/orders" element={<Orders />} />
 
-            {/* 🔥 404 (WAJIB PALING BAWAH) */}
-            <Route 
-              path="*" 
-              element={
-                <ErrorPage 
-                  code="404"
-                  description="Page Not Found"
-                  image="https://cdn-icons-png.flaticon.com/512/564/564619.png"
-                />
-              } 
-            />
+              {/* CUSTOMERS */}
+              <Route path="/customers" element={<Customers />} />
+              <Route path="/customers/:id" element={<CustomerDetail />} />
 
-          </Routes>
+              {/* 🔥 PRODUCTS (TUGAS BARU) */}
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
+
+              {/* ERROR */}
+              <Route 
+                path="/error-400" 
+                element={<ErrorPage code="400" description="Bad Request" />}
+              />
+
+              <Route 
+                path="/error-401" 
+                element={<ErrorPage code="401" description="Unauthorized" />}
+              />
+
+              <Route 
+                path="/error-403" 
+                element={<ErrorPage code="403" description="Forbidden" />}
+              />
+
+              {/* 404 */}
+              <Route 
+                path="*" 
+                element={<ErrorPage code="404" description="Page Not Found" />}
+              />
+
+            </Routes>
+
+          </Suspense>
 
         </div>
       </div>

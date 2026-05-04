@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; // ✅ WAJIB
 import PageHeader from "../components/PageHeader";
 import { customersData } from "../data/customers";
 
@@ -7,6 +8,7 @@ export default function Customers() {
 
   return (
     <div>
+      {/* HEADER */}
       <PageHeader
         title="Customers"
         breadcrumb={["Dashboard", "Customer List"]}
@@ -90,9 +92,22 @@ export default function Customers() {
                 key={cust.id}
                 className="border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition"
               >
-                <td className="p-3 font-semibold">#{cust.id}</td>
+                {/* 🔥 ID (klik ke detail) */}
+                <td className="p-3 font-semibold text-blue-500">
+                  <Link to={`/customers/${cust.id}`}>
+                    #{cust.id}
+                  </Link>
+                </td>
 
-                <td className="p-3">{cust.name}</td>
+                {/* 🔥 NAME (klik ke detail juga) */}
+                <td className="p-3">
+                  <Link
+                    to={`/customers/${cust.id}`}
+                    className="text-blue-500 hover:underline"
+                  >
+                    {cust.name}
+                  </Link>
+                </td>
 
                 <td className="p-3 text-gray-500">
                   {cust.email}

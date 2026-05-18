@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
-import { FaClipboardList, FaUsers, FaBoxOpen, FaPlus, FaExclamationTriangle } from "react-icons/fa";
+import {
+  FaClipboardList,
+  FaUsers,
+  FaBoxOpen,
+  FaPlus,
+  FaExclamationTriangle
+} from "react-icons/fa";
 
 export default function Sidebar() {
 
@@ -29,7 +35,7 @@ export default function Sidebar() {
       <div className="mt-10">
         <ul className="space-y-3">
 
-          {/* MAIN MENU */}
+          {/* DASHBOARD */}
           <li>
             <NavLink to="/" className={menuClass}>
               <MdDashboard className="text-xl" />
@@ -37,6 +43,7 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* ORDERS */}
           <li>
             <NavLink to="/orders" className={menuClass}>
               <FaClipboardList className="text-xl" />
@@ -44,6 +51,7 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* CUSTOMERS */}
           <li>
             <NavLink to="/customers" className={menuClass}>
               <FaUsers className="text-xl" />
@@ -51,7 +59,7 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
-          {/* 🔥 TAMBAHAN WAJIB (MODUL PRODUCT) */}
+          {/* PRODUCTS */}
           <li>
             <NavLink to="/products" className={menuClass}>
               <FaBoxOpen className="text-xl" />
@@ -59,14 +67,23 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* COMPONENTS */}
+          <li>
+            <NavLink to="/components" className={menuClass}>
+              <FaBoxOpen className="text-xl" />
+              <span>Components</span>
+            </NavLink>
+          </li>
+
           {/* PEMISAH */}
           <hr className="my-3 border-gray-200 dark:border-gray-700" />
 
-          {/* ERROR MENU */}
+          {/* ERROR TITLE */}
           <li className="text-gray-400 text-sm font-semibold">
             Error Pages
           </li>
 
+          {/* ERROR 400 */}
           <li>
             <NavLink to="/error-400" className={menuClass}>
               <FaExclamationTriangle className="text-xl" />
@@ -74,6 +91,7 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* ERROR 401 */}
           <li>
             <NavLink to="/error-401" className={menuClass}>
               <FaExclamationTriangle className="text-xl" />
@@ -81,6 +99,7 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* ERROR 403 */}
           <li>
             <NavLink to="/error-403" className={menuClass}>
               <FaExclamationTriangle className="text-xl" />
@@ -95,15 +114,20 @@ export default function Sidebar() {
       <div className="mt-auto">
 
         <div className="bg-hijau px-4 py-3 rounded-md shadow-lg mb-10 flex items-center justify-between">
+
           <div className="text-white text-sm">
+
             <span>
               Please organize your menus through button below!
             </span>
 
             <div className="flex justify-center items-center gap-2 p-2 mt-3 bg-white rounded-md">
               <FaPlus className="text-gray-600 text-sm" />
-              <span className="text-gray-600">Add Menus</span>
+              <span className="text-gray-600">
+                Add Menus
+              </span>
             </div>
+
           </div>
 
           <img
@@ -111,6 +135,7 @@ export default function Sidebar() {
             className="w-20 h-20 rounded-full object-cover ml-3"
             alt="user"
           />
+
         </div>
 
         <span className="font-bold text-gray-400">
@@ -122,6 +147,7 @@ export default function Sidebar() {
         </p>
 
       </div>
+
     </div>
   );
 }
